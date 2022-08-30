@@ -1,0 +1,3 @@
+/home/jonathas/LIP1/exercicio_aula2/conversor_celcius/CMakeFiles/rebuild_cache.dir
+/home/jonathas/LIP1/exercicio_aula2/conversor_celcius/CMakeFiles/edit_cache.dir
+/home/jonathas/LIP1/exercicio_aula2/conversor_celcius/CMakeFiles/temperatura.dir
