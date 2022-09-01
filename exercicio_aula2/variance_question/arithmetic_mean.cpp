@@ -5,6 +5,7 @@ using std::cout;
 
 float arithmeticMean(int total_elements, char *argv[]){
     float total = 0;
+    cout << "total elements:" << total_elements << std::endl;
     for (int i = 0; i < total_elements; i++)
     {
         cout << "element:" << atoi(argv[i]) << std::endl;
