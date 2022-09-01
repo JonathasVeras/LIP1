@@ -1,6 +1,14 @@
 #include "arithmetic_mean.h"
+#include <stdlib.h>
 
-float arithmeticMean(float number1, float number2, float number3){
-    return ((number1 + number2 + number3) / 3.0);
+
+float arithmeticMean(int argc, char *argv[]){
+    float total = 0;
+    for (int i = 1; i < argc; i++)
+    {
+        total += atoi(argv[i]);
+    }
+    
+    return ((total) / (argc-1.0));
 }
 
