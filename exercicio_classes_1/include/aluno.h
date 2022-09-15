@@ -9,6 +9,8 @@ class Aluno{
     string genero;
     string cpf;
     public:
+        Aluno(string _nome, string _matricula, int _idade, string _genero, string _cpf);
+        Aluno();
         void setNome(string nome_recebido);
         string getNome();
 

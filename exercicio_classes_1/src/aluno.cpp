@@ -1,5 +1,16 @@
 #include "../include/aluno.h"
 
+Aluno::Aluno(string _nome, string _matricula, int _idade, string _genero, string _cpf):
+    nome(_nome), matricula(_matricula), idade(_idade), genero(_genero), cpf(_cpf) {}
+
+Aluno::Aluno(){
+    nome = "";
+    matricula = "";
+    idade = 0;
+    genero = "";
+    cpf = "";
+};
+
 void Aluno::setNome(string nome_recebido){
     nome = nome_recebido;
 }

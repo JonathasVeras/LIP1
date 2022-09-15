@@ -1,24 +1,26 @@
 #include <iostream>
 #include "../include/aluno.h"
 #include "../include/turma.h"
-
+#include <vector>
 using std::cout;
 using std::endl;
 using std::cin;
 using std::string;
+using std::vector;
 int main(void){
     int numero_alunos;
     cout << "Digite a quantidade de alunos: ";
     Turma turma;
     cin >> numero_alunos;
-    Aluno aluno[numero_alunos];
+    vector <Aluno> aluno;
     string nome;
     string matricula;
     int idade;
     string genero;
     string cpf;
-    for (int i = 0; i < numero_alunos; i++)
+    for (int i = 0; i < numero_alunos; ++i)
     {
+        Aluno x;
         cout << "Insira os dados do aluno " << i << ": " << endl;;
         cout << "Nome: ";
         cin >> nome;
@@ -30,12 +32,14 @@ int main(void){
         cin >> genero;
         cout << "cpf: ";
         cin >> cpf;
-        aluno[i].setNome(nome);
-        aluno[i].setMatricula(matricula);
-        aluno[i].setIdade(idade);
-        aluno[i].setGenero(genero);
-        aluno[i].setCpf(cpf);
+        x.setNome(nome);
+        x.setMatricula(matricula);
+        x.setIdade(idade);
+        x.setGenero(genero);
+        x.setCpf(cpf);
+        aluno.push_back(x);
     }
+    cout << "ola" << endl;
     for (int i = 0; i < numero_alunos; i++)
     {
         string nome_aluno = aluno[i].getNome();
